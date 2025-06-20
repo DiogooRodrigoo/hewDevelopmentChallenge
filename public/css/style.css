@@ -1,0 +1,60 @@
+/* === Video Section ===*/
+#video-section {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+#video-section .ratio {
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* === References Section ===*/
+#references-section {
+  background-color: #f8f9fa; 
+  padding: 60px 0;
+}
+
+.references-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #343a40;
+}
+
+.references-list li {
+  margin-bottom: 16px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.references-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.references-list strong {
+  color: #212529;
+}
+
+.references-list em {
+  font-style: italic;
+  color: #6c757d;
+}
+
+/* === Footer Section ===*/
+.footer-links li {
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #f8f9fa !important;
+}

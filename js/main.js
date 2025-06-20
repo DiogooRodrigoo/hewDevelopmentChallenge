@@ -1,11 +1,9 @@
-// Constante para tempo limite (20min14s)
 const SHOW_LAYOUT_AFTER_SECONDS = 1214;
 
 let player;
 let intervalId = null;
 let offerShown = false;
 
-// Injeta a API do YouTube dinamicamente
 (function loadYouTubeAPI() {
   const tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
@@ -13,7 +11,6 @@ let offerShown = false;
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 })();
 
-// Função chamada pela API do YouTube quando pronta
 window.onYouTubeIframeAPIReady = function() {
   player = new YT.Player("player", {
     events: {
@@ -24,7 +21,6 @@ window.onYouTubeIframeAPIReady = function() {
 };
 
 function onPlayerReady() {
-  // Player is ready to interact
 }
 
 function onPlayerStateChange(event) {
@@ -60,13 +56,11 @@ function showFinalLayout() {
   dynamicLayout.classList.remove("d-none");
   initialLayout.classList.add("d-none");
 
-  // Inicia a contagem regressiva de 20 minutos no(s) timer(s)
   document.querySelectorAll(".countdown-timer").forEach(timerEl => {
     startCountdown(20 * 60, timerEl); // 20 minutos em segundos
   });
 }
 
-// Função para iniciar a contagem regressiva
 function startCountdown(durationInSeconds, timerElement) {
   let timeLeft = durationInSeconds;
 

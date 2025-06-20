@@ -3,6 +3,8 @@ function loadDynamicLayout() {
     .then(response => response.text())
     .then(html => {
       document.getElementById('dynamic-layout-container').innerHTML = html;
+
+      document.dispatchEvent(new Event('dynamicLayoutLoaded'));
     })
     .catch(err => {
       console.error('Erro ao carregar o componente:', err);

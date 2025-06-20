@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600&display=swap');
+/* === Global Styles & Fonts ===*/
+:root {
+  --primary-color: #2E7D32;      
+  --primary-hover: #1b5e20;
+  --secondary-color: #A5D6A7;     
+  --accent-color: #FFD600;        
+  --text-dark: #212121;     
+  --text-muted: #6c757d;    
+  --white-color: #fff;
+  --dark-color: #121212;    
+  --danger-color: #d63384;  
+  --success-color: #28a745; 
+}
+/* === Font Settings === */
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--white-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
 /* === Video Section ===*/
 #video-section {
     background-color: var(--dark-color);
@@ -41,7 +68,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--text-dark);
 }
 
 .product-supply,
@@ -53,58 +80,59 @@
 .shipping-cost {
   margin: 0.25rem 0;
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-muted);
 }
 
 .product-guarantee {
   font-style: italic;
-  color: #777;
+  color: var(--text-muted);
 }
 
 .price-per-bottle strong {
-  color: #111;
+  color: var(--text-dark);
 }
 
 .original-price {
-  color: #aaa;
+  color: var(--neutral-gray);
   text-decoration: line-through;
 }
 
 .discount {
-  color: #d63384;
+  color: var(--danger-color);
   font-weight: 600;
 }
 
 .final-price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #28a745;
+  color: var(--success-color);
 }
 
 .shipping-cost {
   font-size: 0.9rem;
-  color: #6c757d;
+  color: var(--text-muted);
 }
 
 .buy-button {
   font-size: 1rem;
   padding: 0.6rem 1.2rem;
   font-weight: 600;
-  background-color: #007bff;
+  background-color: var(--primary-color);
   border: none;
+  color: var(--white-color);
   transition: background-color 0.2s ease-in-out;
   margin-top: 1rem;
 }
 
 .buy-button:hover {
-  background-color: #0056b3;
-  color: #fff;
+  background-color: var(--primary-hover);
+  color: var(--white-color);
   cursor: pointer;
 }
 
 /* === References Section ===*/
 #references-section {
-  background-color: #f8f9fa; 
+  background-color: var(--neutral-light);
   padding: 60px 0;
 }
 
@@ -114,7 +142,7 @@
   margin: 0;
   font-size: 1rem;
   line-height: 1.6;
-  color: #343a40;
+  color: var(--neutral-dark);
 }
 
 .references-list li {
@@ -127,18 +155,18 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #007bff;
+  color: var(--primary-color);
   font-size: 1.2rem;
   line-height: 1;
 }
 
 .references-list strong {
-  color: #212529;
+  color: var(--text-dark);
 }
 
 .references-list em {
   font-style: italic;
-  color: #6c757d;
+  color: var(--text-muted);
 }
 
 /* === Footer Section ===*/
@@ -148,5 +176,44 @@
 
 .footer-links a:hover {
   text-decoration: underline;
-  color: #f8f9fa !important;
+  color: var(--neutral-light) !important;
+}
+
+/* === Bootstrap Overrides === */
+.bg-warning {
+  background-color: var(--accent-color) !important; 
+  color: var(--text-dark) !important; 
+}
+
+.text-danger {
+  color: var(--danger-color) !important;
+}
+
+.text-success {
+  color: var(--success-color) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.bg-light {
+  background-color: var(--neutral-light) !important;
+  color: var(--text-dark) !important;
+}
+
+/* --- FAQ Accordion --- */
+#faqAccordion .accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  box-shadow: none;
+  border: 1px solid var(--primary-color);
+}
+
+#faqAccordion .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
 }

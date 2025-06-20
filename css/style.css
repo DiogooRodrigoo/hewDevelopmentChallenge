@@ -10,6 +10,98 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
+/* === Dynamic-Layout Section ===*/
+.product-card {
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 6px;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.product-supply,
+.product-guarantee,
+.price-per-bottle,
+.original-price,
+.discount,
+.final-price,
+.shipping-cost {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.product-guarantee {
+  font-style: italic;
+  color: #777;
+}
+
+.price-per-bottle strong {
+  color: #111;
+}
+
+.original-price {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.discount {
+  color: #d63384;
+  font-weight: 600;
+}
+
+.final-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.shipping-cost {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.buy-button {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 1rem;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* === References Section ===*/
 #references-section {
   background-color: #f8f9fa; 

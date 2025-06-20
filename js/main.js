@@ -38,23 +38,32 @@ document.addEventListener("DOMContentLoaded", function () {
       offerShown = true;
       postContent.classList.remove("d-none");
       initialLayout.classList.add("d-none");
-      startCountdown(20 * 60);
+
+      document.querySelectorAll(".countdown-timer").forEach(timerElement => {
+        startCountdown(20 * 60, timerElement);
+      });
+
       console.log("Conteúdo exibido após 20:14");
     }
   }
 
-  function startCountdown(duration) {
-    const timerDisplay = document.getElementById("timer");
+  function startCountdown(duration, timerElement) {
     let time = duration;
+
+    const minutesEl = timerElement.querySelector(".minutes");
+    const secondsEl = timerElement.querySelector(".seconds");
 
     const countdownInterval = setInterval(() => {
       const minutes = Math.floor(time / 60).toString().padStart(2, '0');
       const seconds = (time % 60).toString().padStart(2, '0');
-      timerDisplay.textContent = `${minutes}:${seconds}`;
+
+      if (minutesEl) minutesEl.textContent = minutes;
+      if (secondsEl) secondsEl.textContent = seconds;
 
       if (--time < 0) {
         clearInterval(countdownInterval);
-        timerDisplay.textContent = "Offer expired";
+        if (minutesEl) minutesEl.textContent = "00";
+        if (secondsEl) secondsEl.textContent = "00";
       }
     }, 1000);
   }

@@ -130,6 +130,41 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+/* === Countdown Timer Section === */
+.countdown-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--accent-color); /* manter o amarelo vibrante */
+  color: var(--text-dark);
+}
+
+.countdown-title {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+}
+
+/* Remove display flex, vamos usar classes do Bootstrap no HTML */
+.countdown-timer {
+  gap: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Mantemos o box com background e borda arredondada */
+.time-box {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  min-width: 70px;
+  box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* === References Section ===*/
 #references-section {
   background-color: var(--neutral-light);

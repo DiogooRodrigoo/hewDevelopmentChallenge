@@ -40,6 +40,8 @@ document.addEventListener('dynamicLayoutLoaded', () => {
     toggleSubmitButton(); 
   });
 
+let purchaseData = {};
+
   form.addEventListener("submit", event => {
     event.preventDefault();
 
@@ -48,6 +50,14 @@ document.addEventListener('dynamicLayoutLoaded', () => {
       return;
     }
 
-    window.location.href = "/thank-you.html";
+    purchaseData = {
+      name: inputs.name.value.trim(),
+      email: inputs.email.value.trim(),
+      phone: inputs.phone.value.trim()
+    };
+
+    localStorage.setItem("purchaseData", JSON.stringify(purchaseData));
+
+    window.location.href = "/order-confirmation.html";
   });
 });

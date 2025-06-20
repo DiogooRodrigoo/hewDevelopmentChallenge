@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main class="vls-oage">
@@ -20,7 +20,17 @@
                     <!-- Centered video column -->
                     <div class="col-12 col-lg-8">
                         <div class="ratio ratio-16x9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/FnZbX0yL5-Q?autoplay=1&mute=1" title="A Workout and Talk with Chris Williamson – Extended Session" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            <iframe
+                            id="player"
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/FnZbX0yL5-Q?enablejsapi=1&autoplay=1&mute=1"
+                            title="A Workout and Talk with Chris Williamson – Extended Session"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            referrerpolicy="strict-origin-when-cross-origin">
+                            </iframe>                    
                         </div>
                     </div>
                 </div>
@@ -62,6 +72,17 @@
                     </div>
                 </div>
             </section>
+        </div>
+
+        <!-- Hidden content that appears after 20:14 -->
+        <div id="dynamic-layout" class="d-none">
+  
+            <!-- Countdown timer -->
+            <div id="countdown-timer" class="text-center my-5">
+                <h4 class="mb-3">Special offer expires in:</h4>
+                <div id="timer" class="fw-bold fs-3 text-danger">20:00</div>
+            </div>
+
         </div>
 
         <!-- Footer -->
@@ -109,5 +130,9 @@
             </div>
         </footer>
     </main>
+
+    <!-- YouTube Player API and main JS -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

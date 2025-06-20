@@ -6,11 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .then(html => {
       const container = document.getElementById('footer-container');
-      if (container) {
-        container.innerHTML = html;
-      } else {
-        console.warn('No element with id "footer-container" found.');
+      if (!container) {
+        console.warn('Element with id "footer-container" not found.');
+        return; 
       }
+      container.innerHTML = html;
     })
-    .catch(console.error);
+    .catch(err => {
+      console.error('Error loading footer:', err);
+    });
 });

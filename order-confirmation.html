@@ -1,22 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thank You - Natty Lean</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="./css/global.css" />
-  <!-- CSS - Page Order Confirmation -->
-  <link rel="stylesheet" href="./css/" />
-</head>
-<body>
-  <div id="footer-container"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order Confirmation - Natty Lean</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <!-- CSS - Page Order Confirmation -->
+    <link rel="stylesheet" href="./css/order-confirmation.css" />
+  </head>
+  <body>
+    <main>
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h1 class="text-center mb-4 text-success fw-bold">
+            Thank You, [Nome do Cliente]!
+          </h1>
+          <p class="text-center text-muted mb-5">
+            Your purchase was successful. Welcome to the Natty Lean family!
+          </p>
 
-  <!-- Bootstrap Bundle JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  <!-- Custom JS for this page -->
-  <script src="./js/footerLoader.js"></script>
-</body>
+          <div class="row justify-content-center mb-5">
+            <div class="col-md-6 col-lg-4 mb-4 text-center">
+              <img
+                src="[IMAGEM DO PRODUTO]"
+                alt="Product"
+                class="img-fluid rounded shadow-sm mb-3"
+              />
+              <h5 class="fw-semibold">[Quantidade de Potes] Bottles</h5>
+              <p class="text-muted">Total: <strong>[Preço Total]</strong></p>
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+              <div class="bg-white p-4 rounded shadow-sm">
+                <h5 class="mb-3">Customer Information</h5>
+                <p><strong>Email:</strong> [Email do Cliente]</p>
+                <p><strong>Shipping Time:</strong></p>
+                <ul class="text-muted ps-3">
+                  <li>U.S.: 3-5 business days</li>
+                  <li>International: 7-14 business days</li>
+                </ul>
+                <p class="text-muted">
+                  You’ll receive a confirmation email with shipping details at
+                  <strong>[Email do Cliente]</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bonus Section -->
+          <div
+            class="bonus-section text-center bg-warning p-4 rounded shadow-sm mb-5"
+          >
+            <h3 class="fw-bold mb-2">🎁 Free Bonus Gift</h3>
+            <p class="mb-3">
+              For your purchase of [Quantidade de Potes] bottles, you’ll receive
+              the ebook <strong>[Nome do Ebook]</strong>.
+            </p>
+            <img
+              src="[IMAGEM DO EBOOK]"
+              alt="Ebook"
+              class="img-fluid rounded"
+              style="max-width: 200px"
+            />
+          </div>
+
+          <!-- Legal / Disclaimer -->
+          <div class="text-muted small text-center px-md-5">
+            <p>
+              The statements on this site have not been evaluated by the FDA.
+              This product is not intended to diagnose, treat, cure, or prevent
+              any disease. Always consult your physician before starting any new
+              supplement, nutrition, or training program.
+            </p>
+            <p>
+              H&W® is a registered trademark of H&W, Inc., a Delaware
+              corporation, used by permission. All rights reserved © [Nome do
+              Produto] Research 2025.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <div id="footer-container"></div>
+    </main>
+    <!-- Bootstrap Bundle JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS for this page -->
+    <script src="./js/footerLoader.js"></script>
+  </body>
 </html>

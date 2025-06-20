@@ -1,0 +1,78 @@
+/* Container da seção principal */
+.order-confirmation-container {
+  padding: 3rem 0;
+}
+
+/* Título principal */
+.order-confirmation-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Imagem do produto */
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Box de detalhes do produto e cliente */
+.details-box {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+}
+
+/* Títulos das seções internas */
+.section-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Parágrafos */
+.details-box p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+
+/* Bônus */
+.bonus-section {
+  background-color: var(--accent-color);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--text-dark);
+  margin-top: 3rem;
+}
+
+.bonus-section h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.bonus-section img {
+  max-width: 180px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsividade extra */
+@media (max-width: 767px) {
+  .details-box {
+    margin-top: 2rem;
+  }
+}

@@ -1,130 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claim Your Health & Wellness - Natty Lean</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/global.css" />
     <!-- Google Fonts: Inter + Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <main class="vls-oage">
-        <!-- Video section -->
-        <section id="video-section" class="py-5 bg-dark">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <!-- Centered video column -->
-                    <div class="col-12 col-lg-8">
-                        <div class="video-wrapper shadow-lg rounded">
-                            <div class="ratio ratio-16x9">
-                                <iframe
-                                id="player"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/FnZbX0yL5-Q?enablejsapi=1&autoplay=1&mute=1"
-                                title="A Workout and Talk with Chris Williamson – Extended Session"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                                referrerpolicy="strict-origin-when-cross-origin">
-                                </iframe>                    
-                            </div>
-                        </div>
-                    </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="vls-page">
+      <!-- Video section -->
+      <section id="video-section" class="py-5 bg-dark">
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- Centered video column -->
+            <div class="col-12 col-lg-8">
+              <div class="video-wrapper shadow-lg rounded">
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    id="player"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/FnZbX0yL5-Q?enablejsapi=1&autoplay=1&mute=1"
+                    title="A Workout and Talk with Chris Williamson – Extended Session"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    referrerpolicy="strict-origin-when-cross-origin"
+                  >
+                  </iframe>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <!-- References section -->
-        <div id="initial-layout" >
-            <section id="references-section" class="references-section py-5">
-                <div class="container">
-                    <h2 class="text-center mb-4">References</h2>
-                    <!-- Column that holds the reference list -->
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10">
-                            <ul class="references-list">
-                                <!-- Individual reference items -->
-                                <li>"Beta-Hydroxybutyrate: Its Role in Fat Metabolism and Weight Loss" – Cahill GF Jr. (Metabolic Studies, 2017)</li>
-                                <li>"Ketogenic Diets and Their Effectiveness in Promoting Weight Loss" – Paoli A, et al. (Nutrition & Metabolism, 2014)</li>
-                                <li>"Exogenous Ketones and Fat Burning: Insights into Weight Loss" – Stubbs BJ, et al. (Obesity Research & Clinical Practice, 2018)</li>
-                                <li>"The Role of Magnesium in Metabolism and Weight Reduction" – DiNicolantonio JJ, O'Keefe JH (Open Heart, 2018)</li>
-                                <li>"Calcium Intake and Fat Loss: Mechanisms and Evidence" – Zemel MB (International Journal of Obesity, 2004)</li>
-                                <li>"Sodium's Impact on Weight Regulation and Water Retention" – He FJ, MacGregor GA (Journal of Human Nutrition and Dietetics, 2018)</li>
-                                <li>"The Appetite-Suppressing Effects of Ketosis: Beta-Hydroxybutyrate's Role" – Gibson AA, et al. (Appetite, 2015)</li>
-                                <li>"Ketone Bodies as a Fuel Source: Implications for Weight Management" – Volek JS, Phinney SD (Journal of Nutrition and Metabolism, 2012)</li>
-                                <li>"Intermittent Fasting and Ketosis: Effects on Fat Loss" – Mattson MP, et al. (New England Journal of Medicine, 2019)</li>
-                                <li>"Low-Carb Diets and Weight Loss: A Comprehensive Review" – Brehm BJ, et al. (Journal of Clinical Endocrinology & Metabolism, 2003)</li>
-                                <li>"Magnesium and Its Role in Metabolism During Weight Loss" – Barbagallo M, Dominguez LJ (Current Obesity Reports, 2010)</li>
-                                <li>"Beta-Hydroxybutyrate and Fat Burning: How It Enhances Weight Loss" – Newport MT, et al. (Nutrition Research, 2015)</li>
-                                <li>"The Impact of Ketones on Physical Performance and Weight Reduction" – Evans M, et al. (Journal of Physiology, 2017)</li>
-                                <li>"Anti-Inflammatory Effects of Beta-Hydroxybutyrate and Their Role in Fat Loss" – Youm YH, et al. (Nature Reviews, 2015)</li>
-                                <li>"The Effects of Sodium on Hydration and Weight Control" – Houston M (Nutrition Research Reviews, 2010)</li>
-                                <li>"Gut Microbiome Changes During Ketogenic Diets and Weight Loss" – Ang QY, et al. (Cell Metabolism, 2020)</li>
-                                <li>"Exercise Combined with Ketones for Accelerated Fat Loss" – Egan B, et al. (Sports Medicine, 2017)</li>
-                                <li>"Beta-Hydroxybutyrate's Role in Suppressing Appetite During Weight Loss" – Sumithran P, et al. (Obesity, 2013)</li>
-                                <li>"Long-term Effects of Low-Carb Diets on Body Composition and Weight" – Bueno NB, et al. (British Journal of Nutrition, 2013)</li>
-                                <li>"The Role of Ketone Supplements in Enhancing Weight Loss and Fat Oxidation" – Clarke K, et al. (Frontiers in Physiology, 2019)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          </div>
         </div>
+      </section>
 
-        <!-- Dynamic Layout -->
-        <div id="dynamic-layout-container" class="d-none" ></div>
+      <!-- References section -->
+      <div id="initial-layout">
+        <section id="references-section" class="references-section py-5">
+          <div class="container">
+            <h2 class="text-center mb-4">References</h2>
+            <!-- Column that holds the reference list -->
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <ul class="references-list">
+                  <!-- Individual reference items -->
+                  <li>
+                    "Beta-Hydroxybutyrate: Its Role in Fat Metabolism and Weight
+                    Loss" – Cahill GF Jr. (Metabolic Studies, 2017)
+                  </li>
+                  <li>
+                    "Ketogenic Diets and Their Effectiveness in Promoting Weight
+                    Loss" – Paoli A, et al. (Nutrition & Metabolism, 2014)
+                  </li>
+                  <li>
+                    "Exogenous Ketones and Fat Burning: Insights into Weight
+                    Loss" – Stubbs BJ, et al. (Obesity Research & Clinical
+                    Practice, 2018)
+                  </li>
+                  <li>
+                    "The Role of Magnesium in Metabolism and Weight Reduction" –
+                    DiNicolantonio JJ, O'Keefe JH (Open Heart, 2018)
+                  </li>
+                  <li>
+                    "Calcium Intake and Fat Loss: Mechanisms and Evidence" –
+                    Zemel MB (International Journal of Obesity, 2004)
+                  </li>
+                  <li>
+                    "Sodium's Impact on Weight Regulation and Water Retention" –
+                    He FJ, MacGregor GA (Journal of Human Nutrition and
+                    Dietetics, 2018)
+                  </li>
+                  <li>
+                    "The Appetite-Suppressing Effects of Ketosis:
+                    Beta-Hydroxybutyrate's Role" – Gibson AA, et al. (Appetite,
+                    2015)
+                  </li>
+                  <li>
+                    "Ketone Bodies as a Fuel Source: Implications for Weight
+                    Management" – Volek JS, Phinney SD (Journal of Nutrition and
+                    Metabolism, 2012)
+                  </li>
+                  <li>
+                    "Intermittent Fasting and Ketosis: Effects on Fat Loss" –
+                    Mattson MP, et al. (New England Journal of Medicine, 2019)
+                  </li>
+                  <li>
+                    "Low-Carb Diets and Weight Loss: A Comprehensive Review" –
+                    Brehm BJ, et al. (Journal of Clinical Endocrinology &
+                    Metabolism, 2003)
+                  </li>
+                  <li>
+                    "Magnesium and Its Role in Metabolism During Weight Loss" –
+                    Barbagallo M, Dominguez LJ (Current Obesity Reports, 2010)
+                  </li>
+                  <li>
+                    "Beta-Hydroxybutyrate and Fat Burning: How It Enhances
+                    Weight Loss" – Newport MT, et al. (Nutrition Research, 2015)
+                  </li>
+                  <li>
+                    "The Impact of Ketones on Physical Performance and Weight
+                    Reduction" – Evans M, et al. (Journal of Physiology, 2017)
+                  </li>
+                  <li>
+                    "Anti-Inflammatory Effects of Beta-Hydroxybutyrate and Their
+                    Role in Fat Loss" – Youm YH, et al. (Nature Reviews, 2015)
+                  </li>
+                  <li>
+                    "The Effects of Sodium on Hydration and Weight Control" –
+                    Houston M (Nutrition Research Reviews, 2010)
+                  </li>
+                  <li>
+                    "Gut Microbiome Changes During Ketogenic Diets and Weight
+                    Loss" – Ang QY, et al. (Cell Metabolism, 2020)
+                  </li>
+                  <li>
+                    "Exercise Combined with Ketones for Accelerated Fat Loss" –
+                    Egan B, et al. (Sports Medicine, 2017)
+                  </li>
+                  <li>
+                    "Beta-Hydroxybutyrate's Role in Suppressing Appetite During
+                    Weight Loss" – Sumithran P, et al. (Obesity, 2013)
+                  </li>
+                  <li>
+                    "Long-term Effects of Low-Carb Diets on Body Composition and
+                    Weight" – Bueno NB, et al. (British Journal of Nutrition,
+                    2013)
+                  </li>
+                  <li>
+                    "The Role of Ketone Supplements in Enhancing Weight Loss and
+                    Fat Oxidation" – Clarke K, et al. (Frontiers in Physiology,
+                    2019)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
-        <!-- Footer -->
-        <div id="footer-container"></div>
+      <!-- Dynamic Layout -->
+      <div id="dynamic-layout-container" class="d-none"></div>
+
+      <!-- Footer -->
+      <div id="footer-container"></div>
     </main>
 
     <!-- Purchase Modal -->
-    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div
+      class="modal fade"
+      id="purchaseModal"
+      tabindex="-1"
+      aria-labelledby="purchaseModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <form id="purchaseForm">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="purchaseModalLabel">Complete Your Purchase</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="userName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="userName" required>
-                    </div>
-                    <div class="mb-3">
-                    <label for="userEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="userEmail" required>
-                    <small class="form-text text-muted">Format: example@domain.com</small>
-                </div>
-                <div class="mb-3">
-                    <label for="userPhone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="userPhone" required>
-                     <small class="form-text text-muted">Format: (123) 456-7890</small>
-                </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-success w-100">Finalize Purchase</button>
-                </div>
-            </form>
+          <form id="purchaseForm">
+            <div class="modal-header">
+              <h5 class="modal-title" id="purchaseModalLabel">
+                Complete Your Purchase
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="userName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="userName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="userEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="userEmail"
+                  required
+                />
+                <small class="form-text text-muted"
+                  >Format: example@domain.com</small
+                >
+              </div>
+              <div class="mb-3">
+                <label for="userPhone" class="form-label">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="userPhone"
+                  required
+                />
+                <small class="form-text text-muted"
+                  >Format: (123) 456-7890</small
+                >
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success w-100">
+                Finalize Purchase
+              </button>
+            </div>
+          </form>
         </div>
-    </div>
+      </div>
     </div>
 
     <!-- Bootstrap Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- JS Main -->
     <script src="./js/main.js"></script>
     <!-- JS Load Dynamic Layout -->
-     <script src="./js/loadDynamicLayout.js"></script>
+    <script src="./js/loadDynamicLayout.js"></script>
     <!-- JS Modal -->
     <script src="./js/purchaseModal.js"></script>
     <!-- JS Load Footer-->
     <script src="./js/footerLoader.js"></script>
-</body>
+  </body>
 </html>

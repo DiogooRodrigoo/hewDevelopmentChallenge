@@ -1,9 +1,7 @@
-/* Container da seção principal */
 .order-confirmation-container {
   padding: 3rem 0;
 }
 
-/* Título principal */
 .order-confirmation-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -13,7 +11,6 @@
   text-align: center;
 }
 
-/* Imagem do produto */
 .product-image {
   max-width: 100%;
   height: auto;
@@ -21,7 +18,6 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* Box de detalhes do produto e cliente */
 .details-box {
   background-color: var(--secondary-color);
   padding: 2rem;
@@ -31,7 +27,6 @@
   color: var(--text-dark);
 }
 
-/* Títulos das seções internas */
 .section-subtitle {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -40,14 +35,12 @@
   margin-bottom: 1rem;
 }
 
-/* Parágrafos */
 .details-box p {
   margin-bottom: 1rem;
   line-height: 1.5;
   color: var(--text-dark);
 }
 
-/* Bônus */
 .bonus-section {
   background-color: var(--accent-color);
   padding: 2rem;
@@ -70,7 +63,6 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Responsividade extra */
 @media (max-width: 767px) {
   .details-box {
     margin-top: 2rem;

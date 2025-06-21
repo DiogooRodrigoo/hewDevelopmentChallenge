@@ -149,6 +149,13 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 }
 
+.img-fixed-size {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  display: block;
+}
+
 .price-per-bottle strong {
   color: var(--text-dark);
 }

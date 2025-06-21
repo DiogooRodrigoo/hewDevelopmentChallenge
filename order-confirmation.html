@@ -19,8 +19,8 @@
     <main>
       <section class="py-5 bg-light">
         <div class="container">
-          <h1 class="text-center mb-4 text-success fw-bold">
-            Thank You, [Nome do Cliente]!
+          <h1 id="customerName" class="text-center mb-4 text-success fw-bold">
+            Thank You, [Customer Name]!
           </h1>
           <p class="text-center text-muted mb-5">
             Your purchase was successful. Welcome to the Natty Lean family!
@@ -29,18 +29,25 @@
           <div class="row justify-content-center mb-5">
             <div class="col-md-6 col-lg-4 mb-4 text-center">
               <img
-                src="[IMAGEM DO PRODUTO]"
+                id="productImage"
+                src="[Product Image]"
                 alt="Product"
                 class="img-fluid rounded shadow-sm mb-3"
               />
-              <h5 class="fw-semibold">[Quantidade de Potes] Bottles</h5>
-              <p class="text-muted">Total: <strong>[Preço Total]</strong></p>
+              <h5 id="productQuantity" class="fw-semibold">
+                [Quantity] Bottles
+              </h5>
+              <p class="text-muted">
+                Total: <strong id="productTotalPrice">[Total Price]</strong>
+              </p>
             </div>
-
             <div class="col-md-6 col-lg-6">
               <div class="bg-white p-4 rounded shadow-sm">
                 <h5 class="mb-3">Customer Information</h5>
-                <p><strong>Email:</strong> [Email do Cliente]</p>
+                <p>
+                  <strong>Email:</strong>
+                  <span id="customerEmail">[Customer Email]</span>
+                </p>
                 <p><strong>Shipping Time:</strong></p>
                 <ul class="text-muted ps-3">
                   <li>U.S.: 3-5 business days</li>
@@ -48,7 +55,11 @@
                 </ul>
                 <p class="text-muted">
                   You’ll receive a confirmation email with shipping details at
-                  <strong>[Email do Cliente]</strong>.
+                  <strong
+                    ><span id="customerEmailDuplicate"
+                      >[Customer Email]</span
+                    ></strong
+                  >.
                 </p>
               </div>
             </div>
@@ -97,5 +108,6 @@
     ></script>
     <!-- Custom JS for this page -->
     <script src="./js/footerLoader.js"></script>
+    <script src="./js/orderConfirmation.js"></script>
   </body>
 </html>

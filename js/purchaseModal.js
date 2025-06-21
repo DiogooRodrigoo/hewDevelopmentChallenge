@@ -99,6 +99,5 @@ document.addEventListener("dynamicLayoutLoaded", () => {
 
     localStorage.setItem("purchaseData", JSON.stringify(purchaseData));
 
-    window.location.href = "/order-confirmation.html";
-  });
+    window.location.href = "order-confirmation.html";  });
 });

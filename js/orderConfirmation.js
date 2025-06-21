@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const customerEmail = document.getElementById("customerEmail");
   const customerEmailDuplicate = document.getElementById("customerEmailDuplicate");
 
-  if (customerName) customerName.textContent = `Thank You, ${purchaseData.name}!`;
+  if (customerName) customerName.textContent = `Thank You, ${purchaseData.name} & Congratulations!`;
   if (customerEmail) customerEmail.textContent = purchaseData.email;
   if (customerEmailDuplicate) customerEmailDuplicate.textContent = purchaseData.email;
 

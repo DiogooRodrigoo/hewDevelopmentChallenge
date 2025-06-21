@@ -14,6 +14,21 @@ document.addEventListener("dynamicLayoutLoaded", () => {
     phone: document.getElementById("userPhone"),
   };
 
+  const ebooksMap = {
+    2: {
+      name: "FIRM & FIT",
+      imgSrc: "./assets/img/bonus/bonus1.webp",
+    },
+    3: {
+      name: "CRAVINGS CRUSHER",
+      imgSrc: "./assets/img/bonus/bonus2.webp",
+    },
+    6: {
+      name: "SKIN-FIRMING BLUEPRINT",
+      imgSrc: "./assets/img/bonus/bonus3.webp",
+    },
+  };
+
   let selectedProduct = null;
 
   function validateForm() {
@@ -50,6 +65,11 @@ document.addEventListener("dynamicLayoutLoaded", () => {
             .querySelector(".shipping-cost")
             ?.textContent.trim(),
         };
+
+        const ebookInfo = ebooksMap[selectedProduct.quantity];
+        if (ebookInfo) {
+          selectedProduct.ebook = ebookInfo;
+        }
       } else {
         selectedProduct = null;
       }
